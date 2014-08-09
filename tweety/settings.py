@@ -69,7 +69,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 #########################################
 
 
-############### DIRS for static files and templates ############
+############### DIRS for static files and templates ###########
 
 TEMPLATES_DIRS = (
     os.path.join(BASE_DIR,'templates'),
@@ -83,5 +83,12 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     )
+
+################################################################
+
+###############  Twitter API Credentials #######################
+
+API_KEY = 'CUIDTqUwjbCwKI0N4aAK8suEM'
+API_SECRET = 'St7GnFXpQVIsWhW5KhTZAXEDbsnEaMqnu1G7PEy6Pahw8eknBO'
 
 ################################################################

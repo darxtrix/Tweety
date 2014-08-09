@@ -11,17 +11,18 @@ class Tweet_Generator:
         self.words_list = self.clean_data(tweets_list) # clean the data using regex
         self.words_length = len(self.words_list) # by this way we call length only once
         self.tokens = defaultdict(list) # using list constructor  ( w1, w2 ) --> [..]
+        self.structurise() # flood the self.tokens field
 
     def clean_data(self,tweets_list):
         ''' 
             Cleans the list of user 
             statuses by using regex
         '''
-        ignorables = re.compile('http|[@#][a-zA-Z0-9_]+') # making a compiles regex object
+        ignorables = re.compile(r'http|[@#][a-zA-Z0-9_]+|RT|MT') # making a compiles regex object
         #ankush,@bower123,http://mysite.com --> ignore these set of words
         words = [] # a list of w1,w2,w3,w4 ...
         for tweet in tweets_list:
-            for word in tweet: # for every word in a tweet
+            for word in tweet.split(): # for every word in a tweet
                 if not ignorables.search(word):
                     words.append(word.lower()) # making a list of words in user's tweets
         return words
@@ -43,7 +44,8 @@ class Tweet_Generator:
             Generates a tweet of a given size
         '''
         # we should give an initial seed for preicting w1
-        seed = random.randint(0,self.words_length - self.chain_length)
+        #print self.tokens
+        seed = random.randint(0,self.words_length - self.chain_length - 1)
         tweet = []
         w1,w2 = self.words_list[seed],self.words_list[seed+1]
         for ctr in xrange(size):
