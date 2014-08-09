@@ -1,33 +1,19 @@
 """
 Django settings for tweety project.
 
-For more information on this file, see
-https://docs.djangoproject.com/en/1.6/topics/settings/
-
-For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
+PROJECT_DIR = os.path.dirname(__file__)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ixz99s)r0=fza2apc-7ggpx%_25!vh77^_-_5^us&9lx6yx7-#'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
-# Application definition
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -51,9 +37,7 @@ ROOT_URLCONF = 'tweety.urls'
 
 WSGI_APPLICATION = 'tweety.wsgi.application'
 
-
 # Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -61,9 +45,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -76,7 +57,31 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
+############### ROOTS' #################
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static_collection')
+# After running the static collector the static files are collected here
+# to be served under a nignix or any static file server 
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+#uploaded files reside here in the media root or other mime type files
+
+#########################################
+
+
+############### DIRS for static files and templates ############
+
+TEMPLATES_DIRS = (
+    os.path.join(BASE_DIR,'templates'),
+    )
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR,'static'),
+    )
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    )
+
+################################################################
