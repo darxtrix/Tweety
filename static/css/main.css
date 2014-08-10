@@ -60,7 +60,7 @@ body {
     float: left;
 }
 
-#wrapper p,label
+#wrapper label, p.outer_p
 {
     font-size: 25px;
     font-style: italic;
@@ -136,5 +136,9 @@ body {
 }
 #error 
 {
-    font-family: monospace;
+    font-size: 22px;
+    font-style: italic;
+    color : red;
+    font-family: serif;
+    padding : 10px 0;
 }
