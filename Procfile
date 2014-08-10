@@ -1,1 +1,1 @@
-web: gunicorn -b z0.0.0.0:8000 --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt
+web: gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt
