@@ -1,0 +1,140 @@
+/* Some reset Css */
+
+h1,h2,h3,p,div,a,input,form,header,body
+{
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    font-family: helvetica,serif;
+    height: 100%;
+}
+
+#head_container
+{
+    background : #1B8B55;
+    color : white;
+    height: 200px;
+    position: relative; // making it qualify as a container so that margins are computed w.r.t it
+}
+
+#head_wrapper
+{
+    position: absolute;
+    width : 70%;
+    top : 30px;
+    left : 280px;
+}
+
+#logo {
+    width : 120px;
+    height : 120px;
+    display : block;
+    float : left;
+    margin-right: 20px;
+    border : 4px solid white;
+    border-radius: 5px;
+    padding : 7px;
+}
+
+#head_wrapper h1
+{
+    font-size : 60px;
+    font-family : "Comic Sans", "Comic Sans MS", cursive;
+    font-weight: normal;
+}
+
+#head_wrapper h2
+{
+    font-size: 25px;
+    font-family: "Times New Roman",serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+#wrapper{
+    width : 35%;
+    margin-top: 100px;
+    margin-left: 80px;
+    float: left;
+}
+
+#wrapper p,label
+{
+    font-size: 25px;
+    font-style: italic;
+    color : #1B343D;
+    padding : 10px 0;
+}
+
+#wrapper input[type=text]
+{
+    width : 50%;
+    height : 40px;
+    border : 2px solid green;
+    border-radius: 3px;
+    text-indent: 10px;
+    font-size: 20px;
+    color : #666;
+}
+#button
+{
+    display: inline-block;
+    height : 40px;
+    width : 20%;
+    margin-left : 17%;
+    padding : 8px;
+    background-color : #563d7c;
+    border: 3px solid #563d7c;
+    border-radius: 5px;
+    font-size: 70%;
+    color : white;
+    text-align: vertical;
+}
+
+#tweet
+{
+    width : 35%;
+    height : auto;
+    margin-right: 200px;
+    margin-top: 100px;
+    border : 5px solid #666;
+    border-radius: 10px;
+    float: right;
+}
+
+#tweetBox
+{
+    font-size : 30px;
+    font-style : italic;
+    color : rgba(59, 44, 168, 0.86);
+    font-style: bold;
+    padding : 10px;
+    font-weight: bolder;
+}
+
+#foot
+{
+    margin-top: 141px;
+    height : 48px;
+    display : block;
+    color : white;
+    background-color: #1B8B55;
+    position : relative;
+}
+
+#wrap
+{
+    position : absolute;
+    left : 540px;
+    width : 300px;
+    top : 10px;
+    font-weight: 600;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+#error 
+{
+    font-family: monospace;
+}

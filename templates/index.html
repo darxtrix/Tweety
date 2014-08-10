@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset = 'UTF-8' lang = 'en' />
+    <title> Tweety </title>
+    <link href = {% static 'css/main.css' %} rel = 'stylesheet' type = 'text/css' />
+    <srcipt href = {% static 'js/main.js' %} type = 'text/javascript'> </srcipt>
+</head>
+
+<body>
+    <div id = "head_container">
+        <div id = "head_wrapper">
+            <img src = {% static "img/twitter-logo.jpg" %} id="logo"/>
+            <h1> Tweety </h1>
+            <h2> Suggests tweets based on your tweet history.. </h2>
+        </div>
+    </div>
+
+    <div id = "wrapper" >
+        <form action = "/get_tweets" method = "GET" class = "form">
+            <p> Enter a twitter user name </p>
+            <label for = "username"> @ </label>
+            <input type = "text" name = "screen_name" placeholder="Twitter username"/>
+            <p>
+            <input type = "submit" id = "button" value = "Generate"/>
+            </p> 
+            {% if errors %}
+            <p id = "error"> {{ errors }} </p>
+            {% endif %}
+        </form>
+    </div>
+    
+    {% if tweets %}
+    <div id= "tweet">
+            <p>
+            <blockquote id = "tweetBox"> {{ tweets.0 }} </blockquote>
+            </p>
+    </div>
+    {% endif %}
+    
+    <p style="clear:both;"></p>
+    <footer id="foot">
+        <div id="wrap">
+            <p> Made with Django and lots of &lt;3 </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

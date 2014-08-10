@@ -38,13 +38,14 @@ ROOT_URLCONF = 'tweety.urls'
 WSGI_APPLICATION = 'tweety.wsgi.application'
 
 # Database
-
-DATABASES = {
+# Do not need a database for this project
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+'''
 
 LANGUAGE_CODE = 'en-us'
 
@@ -71,7 +72,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 ############### DIRS for static files and templates ###########
 
-TEMPLATES_DIRS = (
+TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,'templates'),
     )
 
