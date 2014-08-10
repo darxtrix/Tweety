@@ -32,7 +32,10 @@ def get_tweets(request):
         if not screen_name:
             context['errors']  = 'No username supplied'
             return render_to_response('index.html',context)
-        next_tweets = get_tweet_history(screen_name)
-        context['tweets'] = next_tweets # passing a list parameter
-        return render_to_response('index.html',context)
- 
+        try : 
+            next_tweets = get_tweet_history(screen_name)
+            context['tweets'] = next_tweets # passing a list parameter
+            return render_to_response('index.html',context)
+        except : 
+            context['errors'] = 'Either the user has no or protected tweets or the user does not exists.'
+            return render_to_response('index.html',context)
