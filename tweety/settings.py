@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_DIR = os.path.dirname(__file__)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ixz99s)r0=fza2apc-7ggpx%_25!vh77^_-_5^us&9lx6yx7-#'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
 
@@ -89,7 +89,7 @@ STATICFILES_FINDERS = (
 
 ###############  Twitter API Credentials #######################
 
-API_KEY = 'CUIDTqUwjbCwKI0N4aAK8suEM'
-API_SECRET = 'St7GnFXpQVIsWhW5KhTZAXEDbsnEaMqnu1G7PEy6Pahw8eknBO'
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
 
 ################################################################
