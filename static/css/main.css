@@ -38,11 +38,13 @@ body {
     padding : 7px;
 }
 
-#head_wrapper h1
+#head_wrapper h1 a
 {
+    text-decoration: none;
     font-size : 60px;
     font-family : "Comic Sans", "Comic Sans MS", cursive;
     font-weight: normal;
+    color : white;
 }
 
 #head_wrapper h2
