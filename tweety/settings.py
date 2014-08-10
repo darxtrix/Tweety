@@ -93,3 +93,7 @@ API_KEY = os.getenv("API_KEY")
 API_SECRET = os.getenv("API_SECRET")
 
 ################################################################
+
+print "###############################"
+print API_SECRET,API_KEY,SECRET_KEY
+print "###############################"

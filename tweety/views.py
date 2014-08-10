@@ -17,9 +17,6 @@ def get_tweet_history(screen_name):
     next_tweets = []
     for i in xrange(10): # generates 10 tweets at a time
         next_tweets.append(twt_gen.generate_tweet(size = random.randint(5,20)))
-    print '###############'
-    print next_tweets
-    print '###############'
     return next_tweets
 
 def index(request):
