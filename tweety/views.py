@@ -29,6 +29,9 @@ def get_tweets(request):
         # getting the screen_name of the user from the query parameter
         screen_name = request.GET.get('screen_name','')
         # js will do the job of checking if screen name exists on twitter or not
+        print "???????"
+        print screen_name
+        print "???????"
         if not screen_name:
             context['errors']  = 'No username supplied'
             return render_to_response('index.html',context)
