@@ -10,12 +10,3 @@ TEMPLATE_DEBUG = False
 
 WSGI_APPLICATION = 'tweety.wsgi.application'
 
-LOGGING = {
-    'handlers': {
-        'console':{
-            'level':'INFO',
-            'class':'logging.StreamHandler',
-            'stream': sys.stdout,
-        },
-    },
-}
