@@ -1,5 +1,5 @@
 from base import *
-
+import sys
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 API_KEY = os.getenv("API_KEY")
@@ -9,3 +9,14 @@ DEBUG = False
 TEMPLATE_DEBUG = False
 
 WSGI_APPLICATION = 'tweety.wsgi_production.application'
+
+LOGGING = {
+    'handlers': {
+        'console':{
+            'level':'INFO',
+            'class':'logging.StreamHandler',
+            'strm': sys.stdout
+        },
+        ...
+    }
+}
