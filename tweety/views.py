@@ -6,7 +6,7 @@ from markov_bot import Tweet_Generator
 from twython import Twython
 
 import random
-from settings.production import API_SECRET,API_SECRET
+from settings.production import API_SECRET,API_KEY
 
 
 def get_tweet_history(screen_name):
