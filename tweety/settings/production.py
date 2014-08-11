@@ -15,7 +15,7 @@ LOGGING = {
         'console':{
             'level':'INFO',
             'class':'logging.StreamHandler',
-            'strm': sys.stdout
+            'stream': sys.stdout,
         },
     },
 }
