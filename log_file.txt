@@ -1,19 +1,9 @@
-2014-08-11T19:31:13.052404+00:00 heroku[web.1]: State changed from crashed to starting
-2014-08-11T19:31:13.037730+00:00 heroku[web.1]: Process exited with status 3
-2014-08-11T19:31:10.204550+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
-2014-08-11T19:31:18.063960+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
-2014-08-11T19:31:21.075884+00:00 heroku[web.1]: State changed from starting to crashed
-2014-08-11T19:31:21.083639+00:00 heroku[web.1]: Process exited with status 3
-2014-08-11T19:34:36+00:00 heroku[slug-compiler]: Slug compilation started
-2014-08-11T19:35:00.729590+00:00 heroku[api]: Deploy c221266 by ankprashar@gmail.com
-2014-08-11T19:35:00+00:00 heroku[slug-compiler]: Slug compilation finished
 2014-08-11T19:35:00.729766+00:00 heroku[api]: Release v7 created by ankprashar@gmail.com
 2014-08-11T19:35:00.876110+00:00 heroku[web.1]: State changed from crashed to starting
 2014-08-11T19:35:07.134873+00:00 heroku[web.1]: State changed from starting to crashed
 2014-08-11T19:35:07.112835+00:00 heroku[web.1]: Process exited with status 3
 2014-08-11T19:35:04.725207+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
-2014-08-11T19:38:11.290139+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tweety.herokuapp.com request_id=2eed5253-bae6-4459-9820-dadf5320fbfe fwd="93.114.45.13" dyno= connect= service= status=503
- bytes=
+2014-08-11T19:38:11.290139+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tweety.herokuapp.com request_id=2eed5253-bae6-4459-9820-dadf5320fbfe fwd="93.114.45.13" dyno= connect= service= status=503 bytes=
 2014-08-11T19:38:12.013988+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tweety.herokuapp.com request_id=59cd8d0c-6e8e-469c-91af-99bc67b4b412 fwd="93.114.45.13" dyno= connect= service= status=503 bytes=
 2014-08-11T19:39:33.088602+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=tweety.herokuapp.com request_id=d340a632-66df-46d3-9a8f-6c7d3a8453e2 fwd="93.114.45.13" dyno= connect= service= status=503 bytes=
 2014-08-11T19:39:33.960445+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=tweety.herokuapp.com request_id=8b41c4e8-7aff-494a-8e06-467d47490544 fwd="93.114.45.13" dyno= connect= service= status=503 bytes=
@@ -25,8 +15,7 @@
 2014-08-11T19:42:21.518079+00:00 heroku[web.1]: State changed from starting to up
 2014-08-11T19:42:22.930480+00:00 heroku[web.1]: State changed from up to crashed
 2014-08-11T19:42:22.921033+00:00 heroku[web.1]: Process exited with status 3
-2014-08-11T19:42:19.842701+00:00 heroku[web.1
-]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
+2014-08-11T19:42:19.842701+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
 2014-08-11T19:42:22.931485+00:00 heroku[web.1]: State changed from crashed to starting
 2014-08-11T19:42:31.714261+00:00 heroku[web.1]: State changed from starting to crashed
 2014-08-11T19:42:27.775502+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
@@ -35,7 +24,8 @@
 2014-08-11T19:48:16+00:00 heroku[slug-compiler]: Slug compilation finished
 2014-08-11T19:48:17.044762+00:00 heroku[web.1]: State changed from crashed to starting
 2014-08-11T19:48:16.509305+00:00 heroku[api]: Deploy 4841461 by ankprashar@gmail.com
-2014-08-11T19:48:16.509305+00:00 heroku[api]: Release v9 created by ankprashar@gmail.com
+2014-08-11T19:48:16.509305+00:00 heroku[api]: R
+elease v9 created by ankprashar@gmail.com
 2014-08-11T19:48:20.960645+00:00 app[web.1]: Traceback (most recent call last):
 2014-08-11T19:48:20.960669+00:00 app[web.1]:   File "/app/.heroku/python/bin/gunicorn", line 11, in <module>
 2014-08-11T19:48:20.960744+00:00 app[web.1]:     WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
@@ -63,8 +53,7 @@
 2014-08-11T19:53:02+00:00 heroku[slug-compiler]: Slug compilation finished
 2014-08-11T19:53:02.109222+00:00 heroku[api]: Deploy 89da8f7 by ankprashar@gmail.com
 2014-08-11T19:53:02.109279+00:00 heroku[api]: Release v10 created by ankprashar@gmail.com
-2014-08-11T19:53:02.231333+00:00 heroku[web.1]: State changed from cra
-shed to starting
+2014-08-11T19:53:02.231333+00:00 heroku[web.1]: State changed from crashed to starting
 2014-08-11T19:53:08.250109+00:00 app[web.1]:     sys.exit(run())
 2014-08-11T19:53:08.250223+00:00 app[web.1]:     WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
 2014-08-11T19:53:08.250649+00:00 app[web.1]:     time.sleep(0.1 * random.random())
@@ -78,7 +67,8 @@ shed to starting
 2014-08-11T19:53:08.250719+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
 2014-08-11T19:53:08.250295+00:00 app[web.1]:     super(Application, self).run()
 2014-08-11T19:53:08.250528+00:00 app[web.1]:     self.spawn_workers()
-2014-08-11T19:53:08.250362+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+2014-08-11T19:53:08.250362+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 7
+1, in run
 2014-08-11T19:53:08.250364+00:00 app[web.1]:     Arbiter(self).run()
 2014-08-11T19:53:08.250537+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 542, in spawn_workers
 2014-08-11T19:53:08.250435+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
@@ -102,3 +92,12 @@ shed to starting
 2014-08-11T19:58:52.993249+00:00 heroku[web.1]: State changed from up to crashed
 2014-08-11T19:58:52.989953+00:00 heroku[web.1]: Process exited with status 3
 2014-08-11T19:58:49.519894+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi_production:application --log-file log_file.txt`
+2014-08-11T20:02:49+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-11T20:03:10+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-11T20:03:11.054311+00:00 heroku[web.1]: State changed from crashed to starting
+2014-08-11T20:03:10.709201+00:00 heroku[api]: Deploy f741f0c by ankprashar@gmail.com
+2014-08-11T20:03:10.709295+00:00 heroku[api]: Release v12 created by ankprashar@gmail.com
+2014-08-11T20:03:17.827120+00:00 heroku[web.1]: State changed from starting to up
+2014-08-11T20:03:19.202697+00:00 heroku[web.1]: State changed from up to crashed
+2014-08-11T20:03:16.206673+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
+2014-08-11T20:03:19.194884+00:00 heroku[web.1]: Process exited with status 3
