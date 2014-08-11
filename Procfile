@@ -1,1 +1,1 @@
-web: gunicorn --settings=tweety.settings.production --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt
+web: gunicorn --pythonpath=./tweety tweety.wsgi:application 
