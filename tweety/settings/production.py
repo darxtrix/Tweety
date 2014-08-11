@@ -8,7 +8,7 @@ API_SECRET = os.getenv("API_SECRET")
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-WSGI_APPLICATION = 'tweety.wsgi_production.application'
+WSGI_APPLICATION = 'tweety.wsgi.application'
 
 LOGGING = {
     'handlers': {
