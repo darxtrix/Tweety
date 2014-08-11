@@ -1,7 +1,3 @@
-2014-08-11T18:03:23.308822+00:00 heroku[api]: Release v2 created by ankprashar@gmail.com
-2014-08-11T18:03:23.305877+00:00 heroku[api]: Enable Logplex by ankprashar@gmail.com
-2014-08-11T18:05:57.515124+00:00 heroku[api]: Set SECRET_KEY, API_KEY, API_SECRET config vars by ankprashar@gmail.com
-2014-08-11T18:05:57.515191+00:00 heroku[api]: Release v3 created by ankprashar@gmail.com
 2014-08-11T18:06:47.356990+00:00 heroku[router]: at=info code=blank-app desc="Blank app" method=GET path="/" host=tweety.herokuapp.com request_id=3ba4e7a6-ab6d-490a-8246-a96a524e00b9 fwd="62.210.74.143" dyno= connect= service= status=502 bytes=
 2014-08-11T18:06:48.265345+00:00 heroku[router]: at=info code=blank-app desc="Blank app" method=GET path="/favicon.ico" host=tweety.herokuapp.com request_id=5d62addc-5d42-4c5a-82a4-ce812fed5a74 fwd="62.210.74.143" dyno= connect= service= status=502 bytes=
 2014-08-11T19:28:04+00:00 heroku[slug-compiler]: Slug compilation started
@@ -75,3 +71,31 @@
 2014-08-11T19:48:21.521779+00:00 heroku[web.1]: State changed from starting to crashed
 2014-08-11T19:48:21.514722+00:00 heroku[web.1]: Process exited with status 1
 2014-08-11T19:48:20.289070+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
+2014-08-11T19:52:29+00:00 heroku[slug-compiler]: Slug compilation started
+2014-08-11T19:53:02+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-08-11T19:53:02.109222+00:00 heroku[api]: Deploy 89da8f7 by ankprashar@gmail.com
+2014-08-11T19:53:02.109279+00:00 heroku[api]: Release v10 created by ankprashar@gmail.com
+2014-08-11T19:53:02.231333+00:00 heroku[web.1]: State changed from crashed to starting
+2014-08-11T19:53:08.250109+00:00 app[web.1]:     sys.exit(run())
+2014-08-11T19:53:08.250223+00:00 app[web.1]:     WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+2014-08-11T19:53:08.250649+00:00 app[web.1]:     time.sleep(0.1 * random.random())
+2014-08-11T19:53:08.250655+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 209, in handle_chld
+2014-08-11T19:53:08.250158+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+2014-08-11T19:53:08.250245+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 185, in run
+2014-08-11T19:53:08.250711+00:00 app[web.1]:     self.reap_workers()
+2014-08-11T19:53:08.250033+00:00 app[web.1]: Traceback (most recent call last):
+2014-08-11T19:53:08.250056+00:00 app[web.1]:   File "/app/.heroku/python/bin/gunicorn", line 11, in <module>
+2014-08-11T19:53:08.250366+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 169, in run
+2014-08-11T19:53:08.250719+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+2014-08-11T19:53:08.250295+00:00 app[web.1]:     super(Application, self).run()
+2014-08-11T19:53:08.250528+00:00 app[web.1]:     self.spawn_workers()
+2014-08-11T19:53:08.250362+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 71, in run
+2014-08-11T19:53:08.250364+00:00 app[web.1]:     Arbiter(self).run()
+2014-08-11T19:53:08.250537+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 542, in spawn_workers
+2014-08-11T19:53:08.250435+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+2014-08-11T19:53:08.250409+00:00 app[web.1]:     self.manage_workers()
+2014-08-11T19:53:08.250810+00:00 app[web.1]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+2014-08-11T19:53:08.250895+00:00 app[web.1]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+2014-08-11T19:53:06.648350+00:00 heroku[web.1]: Starting process with command `gunicorn --pythonpath=./tweety tweety.wsgi:application --log-file log_file.txt`
+2014-08-11T19:53:09.616427+00:00 heroku[web.1]: Process exited with status 1
+2014-08-11T19:53:09.631528+00:00 heroku[web.1]: State changed from starting to crashed
