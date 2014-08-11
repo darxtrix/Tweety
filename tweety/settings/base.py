@@ -1,17 +1,12 @@
 """
-Django settings for tweety project.
+Django base settings for tweety project.
 
 """
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-PROJECT_DIR = os.path.dirname(__file__)
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
-
-DEBUG = False
-
-TEMPLATE_DEBUG = False
+import sys
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(PROJECT_DIR)
 
 ALLOWED_HOSTS = []
 
@@ -36,16 +31,6 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'tweety.urls'
 
 WSGI_APPLICATION = 'tweety.wsgi.application'
-
-# Database
-# Do not need a database for this project
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-'''
 
 LANGUAGE_CODE = 'en-us'
 
@@ -84,12 +69,3 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     )
-
-################################################################
-
-###############  Twitter API Credentials #######################
-
-API_KEY = os.getenv("API_KEY")
-API_SECRET = os.getenv("API_SECRET")
-
-################################################################

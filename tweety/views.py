@@ -6,11 +6,11 @@ from markov_bot import Tweet_Generator
 from twython import Twython
 
 import random
-import settings
+from settings import local
 
 
 def get_tweet_history(screen_name):
-    twt = Twython(settings.API_KEY,settings.API_SECRET)
+    twt = Twython(local.API_KEY,local.API_SECRET)
     time_line = twt.get_user_timeline(screen_name = screen_name,count = 200) # at max retrieves 200 tweets
     tweets_list = [ tweet['text'] for tweet in time_line ]
     twt_gen = Tweet_Generator(tweets_list)
@@ -32,7 +32,7 @@ def get_tweets(request):
         if not screen_name:
             context['errors']  = 'No username supplied'
             return render_to_response('index.html',context)
-        try : 
+        try:
             next_tweets = get_tweet_history(screen_name)
             context['tweets'] = next_tweets # passing a list parameter
             return render_to_response('index.html',context)
