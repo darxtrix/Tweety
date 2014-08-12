@@ -2,4 +2,5 @@ static_collection*
 *local*
 *.pyc
 log_file.txt
-environment_setup.py
+environment*
+*~*
