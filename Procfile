@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath=./tweety tweety.wsgi:application 
+web: gunicorn  --pythonpath=./tweety  tweety.wsgi:application 

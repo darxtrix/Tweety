@@ -1,6 +1,6 @@
+
 """
 Django base settings for tweety project.
-
 """
 import os
 import sys
@@ -30,8 +30,6 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'tweety.urls'
 
-WSGI_APPLICATION = 'tweety.wsgi.application'
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -49,6 +47,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static_collection')
 # After running the static collector the static files are collected here
 # to be served under a nignix or any static file server 
+# can use dj_static
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 #uploaded files reside here in the media root or other mime type files
 
