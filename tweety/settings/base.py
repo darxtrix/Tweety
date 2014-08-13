@@ -4,11 +4,12 @@ Django base settings for tweety project.
 """
 import os
 import sys
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
 sys.path.append(PROJECT_DIR)
+sys.path.append(BASE_DIR)
 
-ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'django.contrib.admin',
