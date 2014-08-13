@@ -82,9 +82,9 @@ body {
 }
 #button
 {
-    display: inline-block;
+    display: inline-block; /*inline block takes width according to context, so no need to give width*/
     height : 40px;
-    width : 20%;
+    //width : 20%;
     margin-left : 17%;
     padding : 8px;
     background-color : #563d7c;
@@ -129,8 +129,7 @@ body {
 #wrap
 {
     position : absolute;
-    left : 540px;
-    width : 300px;
+    left : 540px; /*adjust width by content, no need to give width*/
     top : 10px;
     font-weight: 600;
     font-size: 20px;
