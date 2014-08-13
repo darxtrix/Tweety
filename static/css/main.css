@@ -82,8 +82,7 @@ body {
 }
 #button
 {
-    display: inline-block; /*inline block takes width according to context, so no need to give widthsss*/
-    height : 40px;
+    display: inline-block; /*inline block takes width according to context, so no need to give width and height*/
     margin-left : 17%;
     padding : 8px;
     background-color : #563d7c;
