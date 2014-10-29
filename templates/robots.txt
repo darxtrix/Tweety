@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://tweety.herokuapp.com/sitemap.xml
