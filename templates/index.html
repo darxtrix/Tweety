@@ -1,10 +1,15 @@
 {% load staticfiles %}
 
 <!doctype html>
-<html>
+<htm lang="en">
 <head>
-    <meta charset = 'UTF-8' lang = 'en' />
-    <title> Tweety </title>
+    <meta charset = 'UTF-8' content='text/html'/>
+    <title> Tweety,suggest you tweets </title>
+    <meta name="keywords" content="tweety,tweet-suggester,suggest-tweets-based-on-your-tweet-history,what-should-i-tweet,twitter,Ankush Sharma,black-perl,markov,markov-bot">
+    <meta name="author" content="Ankush Sharma,IIT BHU,black-perl">
+    <meta name="description" content="Tweety is a markov bot that suggests you tweets based upon your tweet history">
+    <link rel="Tweety" href="http://tweety.herokuapp.com"/>
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" type="image/png" href = {% static 'img/favicon.png' %} />
     <link href = {% static 'css/main.css' %} rel = 'stylesheet' type = 'text/css' />
     <srcipt href = {% static 'js/main.js' %} type = 'text/javascript'> </srcipt>
@@ -12,10 +17,11 @@
 
 <body>
     <div id = "head_container">
-        <a href="https://github.com/black-perl/Tweety.git"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a>
+        <a href="https://github.com/black-perl/Tweety.git"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork tweety by black-perl on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a>
         <div id = "head_wrapper">
-            <img src = {% static "img/twitter-logo.jpg" %} id="logo"/>
-            <h1> <a href="/"> Tweety </a> </h1>
+            <img src = {% static "img/tweety.jpg" %} id="logo" alt="Tweety,heroku app"/>
+            <h1> <a href="http://tweety.herokuapp.com"> Tweety </a> </h1>
+            <!-- Tweety is a markov bot that suggest users what to tweet based on their tweet history. -->
             <h2> Suggests tweets based on your tweet history.. </h2>
         </div>
     </div>
