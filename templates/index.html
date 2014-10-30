@@ -1,14 +1,16 @@
 {% load staticfiles %}
 
-<!doctype html>
-<htm lang="en">
+<!Doctype html>
+<!-- @author: Ankush Sharma-->
+<!-- @email: ankprashar@gmail.com-->
+<html lang="en">
 <head>
-    <meta charset = 'UTF-8' content='text/html'/>
     <title> Tweety,suggest you tweets </title>
-    <meta name="keywords" content="tweety,tweet-suggester,suggest-tweets-based-on-your-tweet-history,what-should-i-tweet,twitter,Ankush Sharma,black-perl,markov,markov-bot">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Tweety is a markov bot that suggest you tweets based upon your tweet history.">
+    <meta name="keywords" content="tweet-suggester,suggest-tweets-based-on-your-tweet-history,what-would-i-tweet,twitter,Ankush Sharma,black-perl,markov,markov-bot">
     <meta name="author" content="Ankush Sharma,IIT BHU,black-perl">
-    <meta name="description" content="Tweety is a markov bot that suggests you tweets based upon your tweet history">
-    <link rel="Tweety" href="http://tweety.herokuapp.com"/>
+
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" type="image/png" href = {% static 'img/favicon.png' %} />
     <link href = {% static 'css/main.css' %} rel = 'stylesheet' type = 'text/css' />
@@ -22,7 +24,7 @@
             <img src = {% static "img/tweety.jpg" %} id="logo" alt="Tweety,heroku app"/>
             <h1> <a href="http://tweety.herokuapp.com"> Tweety </a> </h1>
             <!-- Tweety is a markov bot that suggest users what to tweet based on their tweet history. -->
-            <h2> Suggests tweets based on your tweet history.. </h2>
+            <h2> A tweet suggester .. Predict tweets for you based on your tweet history. </h2>
         </div>
     </div>
 
