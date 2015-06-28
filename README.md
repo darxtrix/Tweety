@@ -3,7 +3,7 @@ Tweety
 
 A **Markov Bot** based on bigram probabilities to generate a random tweet based on your tweet history. A markov chain is formed by randomly seeding from your tweet history. It's fun !!
 
-Try it : http://anme.herokuapp.com
+Try it : http://tweety.herokuapp.com
 
 Built Using
 -----------
