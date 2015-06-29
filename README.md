@@ -5,6 +5,8 @@ A **Markov Bot** based on bigram probabilities to generate a random tweet based 
 
 Try it : http://tweety.herokuapp.com
 
+<img src="https://lifeinthegym.files.wordpress.com/2014/03/tweety-bird-4.jpeg" height="250" width="150" alt="black-per-Tweety">
+
 Built Using
 -----------
 
