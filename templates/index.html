@@ -43,8 +43,10 @@
     </div>
     <div id="media">
             <iframe src="https://ghbtns.com/github-btn.html?user=black-perl&repo=Tweety&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="ankprashar" data-size="large" data-dnt="true">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <a class="twitter-follow-button" href="https://twitter.com/ankprashar" data-show-count='false' data-size="large">
+                Follow @ankprashar
+            </a>
+    
     </div>
     {% if tweets %}
     <div id= "tweet">
@@ -60,6 +62,25 @@
             <p> Made with Django and lots of &lt;3 </p>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        window.twttr = (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+          if (d.getElementById(id)) return t;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js, fjs);
+         
+          t._e = [];
+          t.ready = function(f) {
+            t._e.push(f);
+          };
+         
+          return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
 
 </body>
 </html>
