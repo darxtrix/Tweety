@@ -9,6 +9,7 @@ import random
 from settings.production import API_SECRET,API_KEY
 
 
+
 def get_tweet_history(screen_name):
     twt = Twython(API_KEY,API_SECRET)
     time_line = twt.get_user_timeline(screen_name = screen_name,count = 200) # at max retrieves 200 tweets
@@ -35,7 +36,9 @@ def get_tweets(request):
         try:
             next_tweets = get_tweet_history(screen_name)
             context['tweets'] = next_tweets # passing a list parameter
+            context['screen_name'] = screen_name
             return render_to_response('index.html',context)
         except : 
+            context['screen_name'] = screen_name
             context['errors'] = 'Either the user has no or protected tweets or the user does not exists.'
             return render_to_response('index.html',context)
