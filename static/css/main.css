@@ -80,7 +80,7 @@ body {
     font-size: 20px;
     color : #666;
 }
-#button
+#fetchTweets
 {
     display: inline-block; /*inline block takes width according to context, so no need to give width and height*/
     margin-left : 17%;
@@ -93,7 +93,7 @@ body {
     text-align: vertical;
 }
 
-#tweet
+#tweetWrapper
 {
     width : 35%;
     height : auto;
