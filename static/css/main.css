@@ -15,6 +15,7 @@ body {
 {
     background : #1B8B55;
     color : white;
+    height : 200px;
     position: relative; // making it qualify as a container so that margins are computed w.r.t it
 }
 
@@ -142,6 +143,6 @@ body {
 }
 
 #navigation {
-    margin-left: 10%;
+    margin-top: 10%;
     margin-left: 10%;
 }
