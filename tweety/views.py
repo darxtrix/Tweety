@@ -6,7 +6,8 @@ from markov_bot import Tweet_Generator
 from twython import Twython
 
 import random
-from settings.production import API_SECRET,API_KEY
+from settings.local import API_SECRET,API_KEY
+import json
 
 
 
@@ -16,7 +17,7 @@ def get_tweet_history(screen_name):
     tweets_list = [ tweet['text'] for tweet in time_line ]
     twt_gen = Tweet_Generator(tweets_list)
     next_tweets = []
-    for i in xrange(2): # generates 2 tweets at a time
+    for i in xrange(5): # generates 5 tweets at a time
         next_tweets.append(twt_gen.generate_tweet(size = random.randint(5,20)))
     return next_tweets
 
@@ -26,19 +27,21 @@ def index(request):
 
 def get_tweets(request):
     if request.method == "GET":
-        context = Context({})
         # getting the screen_name of the user from the query parameter
         screen_name = request.GET.get('screen_name','')
         # js will do the job of checking if screen name exists on twitter or not
+        response = {}
         if not screen_name:
-            context['errors']  = 'No username supplied'
-            return render_to_response('index.html',context)
-        try:
-            next_tweets = get_tweet_history(screen_name)
-            context['tweets'] = next_tweets # passing a list parameter
-            context['screen_name'] = screen_name
-            return render_to_response('index.html',context)
-        except : 
-            context['screen_name'] = screen_name
-            context['errors'] = 'Either the user has no or protected tweets or the user does not exists.'
-            return render_to_response('index.html',context)
+            response['errors']  = 'No username supplied'
+        else:
+            try:
+                next_tweets = get_tweet_history(screen_name)
+                response['tweets'] = next_tweets # passing a list parameter
+                response['screen_name'] = screen_name
+            except Exception,e: 
+                print e
+                response['screen_name'] = screen_name
+                response['errors'] = 'Either the user has no or protected tweets or the user does not exists.'
+
+        response_json = json.dumps(response)
+        return HttpResponse(response_json,content_type='application/json')
