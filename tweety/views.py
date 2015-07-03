@@ -6,7 +6,7 @@ from markov_bot import Tweet_Generator
 from twython import Twython
 
 import random
-from settings.local import API_SECRET,API_KEY
+from settings.production import API_SECRET,API_KEY
 import json
 
 
