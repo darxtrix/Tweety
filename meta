@@ -1,0 +1,13 @@
+- Disable the collect static on the heroku stage that you are testing on
+heroku config:set DISABLE_COLLECTSTATIC=0 --remote heroku-16
+
+- Created a runtime for setting the default runtime for Python to be 2.7
+
+- Creates a heroku stage for testing the migration from ther heroku stack cedar-10 to heroku-16(
+https://tweety321.herokuapp.com/) and also set the config vars to the stage env
+
+- heroku run bash --remote <> --app <> for a shell login into one of the dynamos
+
+- whenever a Django app is run without python manage.py it takes the settings from DJANGO_SETTINGS_MODULE.
+
+- the static folder is generated after running 'python manage.py collectstatic' and that got turned off due to the config setting DISABLE_COLLECTSTATIC=0
