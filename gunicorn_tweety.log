@@ -716,3 +716,717 @@ Traceback (most recent call last):
 AppImportError: Failed to find application: 'tweety'
 
 2017-07-08 21:55:15 [28920] [INFO] Worker exiting (pid: 28920)
+2017-07-08 23:02:25 [994] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: ('localhost', 8125)
+  post_fork: <function post_fork at 0x7f947b34f9b0>
+  pythonpath: ./tweety
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f947b34f6e0>
+  pre_fork: <function pre_fork at 0x7f947b34f848>
+  cert_reqs: 0
+  preload_app: False
+  workers: 1
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 1000
+  graceful_timeout: 30
+  spew: False
+  proc_name: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f947b34f578>
+  post_worker_init: <function post_worker_init at 0x7f947b34fb18>
+  pre_exec: <function pre_exec at 0x7f947b34ff50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f947b354668>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f947b354140>
+  post_request: <function post_request at 0x7f947b354230>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f947b34fc80>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/ank/projects/tweety-app/tweety
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f947b354398>
+  paste: None
+  default_proc_name: tweety:application
+  errorlog: ./gunicorn_tweety.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f947b34fde8>
+  loglevel: debug
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f947b354500>
+  timeout: 30
+  on_starting: <function on_starting at 0x7f947b34f410>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+2017-07-08 23:02:25 [994] [INFO] Starting gunicorn 19.1.0
+2017-07-08 23:02:25 [994] [DEBUG] Arbiter booted
+2017-07-08 23:02:25 [994] [INFO] Listening at: http://127.0.0.1:8000 (994)
+2017-07-08 23:02:25 [994] [INFO] Using worker: sync
+2017-07-08 23:02:25 [1003] [INFO] Booting worker with pid: 1003
+2017-07-08 23:02:26 [1003] [DEBUG] Exception while loading the application: 
+Traceback (most recent call last):
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/util.py", line 369, in import_app
+    raise AppImportError("Failed to find application: %r" % module)
+AppImportError: Failed to find application: 'tweety'
+
+2017-07-08 23:02:26 [1003] [INFO] Worker exiting (pid: 1003)
+
+2017-07-08 23:03:05 [1098] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: ('localhost', 8125)
+  post_fork: <function post_fork at 0x7fbd08fac9b0>
+  pythonpath: ./tweety
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fbd08fac6e0>
+  pre_fork: <function pre_fork at 0x7fbd08fac848>
+  cert_reqs: 0
+  preload_app: False
+  workers: 1
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 1000
+  graceful_timeout: 30
+  spew: False
+  proc_name: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fbd08fac578>
+  post_worker_init: <function post_worker_init at 0x7fbd08facb18>
+  pre_exec: <function pre_exec at 0x7fbd08facf50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fbd08fb1668>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fbd08fb1140>
+  post_request: <function post_request at 0x7fbd08fb1230>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fbd08facc80>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/ank/projects/tweety-app/tweety
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fbd08fb1398>
+  paste: None
+  default_proc_name: tweety:application
+  errorlog: ./gunicorn_tweety.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7fbd08facde8>
+  loglevel: debug
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fbd08fb1500>
+  timeout: 30
+  on_starting: <function on_starting at 0x7fbd08fac410>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+2017-07-08 23:03:05 [1098] [INFO] Starting gunicorn 19.1.0
+2017-07-08 23:03:05 [1098] [DEBUG] Arbiter booted
+2017-07-08 23:03:05 [1098] [INFO] Listening at: http://127.0.0.1:8000 (1098)
+2017-07-08 23:03:05 [1098] [INFO] Using worker: sync
+2017-07-08 23:03:05 [1103] [INFO] Booting worker with pid: 1103
+2017-07-08 23:03:05 [1103] [DEBUG] Exception while loading the application: 
+Traceback (most recent call last):
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/util.py", line 369, in import_app
+    raise AppImportError("Failed to find application: %r" % module)
+AppImportError: Failed to find application: 'tweety'
+
+2017-07-08 23:03:05 [1103] [INFO] Worker exiting (pid: 1103)
+2017-07-08 23:03:19 [1136] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: ('localhost', 8125)
+  post_fork: <function post_fork at 0x7f8d0dc819b0>
+  pythonpath: ./tweety
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f8d0dc816e0>
+  pre_fork: <function pre_fork at 0x7f8d0dc81848>
+  cert_reqs: 0
+  preload_app: False
+  workers: 1
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 1000
+  graceful_timeout: 30
+  spew: False
+  proc_name: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f8d0dc81578>
+  post_worker_init: <function post_worker_init at 0x7f8d0dc81b18>
+  pre_exec: <function pre_exec at 0x7f8d0dc81f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f8d0dc86668>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f8d0dc86140>
+  post_request: <function post_request at 0x7f8d0dc86230>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f8d0dc81c80>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/ank/projects/tweety-app/tweety
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f8d0dc86398>
+  paste: None
+  default_proc_name: tweety.wsgi:application
+  errorlog: ./gunicorn_tweety.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f8d0dc81de8>
+  loglevel: debug
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f8d0dc86500>
+  timeout: 30
+  on_starting: <function on_starting at 0x7f8d0dc81410>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+2017-07-08 23:03:19 [1136] [INFO] Starting gunicorn 19.1.0
+2017-07-08 23:03:19 [1136] [DEBUG] Arbiter booted
+2017-07-08 23:03:19 [1136] [INFO] Listening at: http://127.0.0.1:8000 (1136)
+2017-07-08 23:03:19 [1136] [INFO] Using worker: sync
+2017-07-08 23:03:19 [1141] [INFO] Booting worker with pid: 1141
+2017-07-08 23:03:19 [1136] [INFO] 1 workers
+2017-07-08 23:03:20 [1141] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+    __import__(module)
+  File "/home/ank/projects/tweety-app/tweety/tweety/wsgi.py", line 7, in <module>
+    from dj_static import Cling # define this after setting the DJANGO_SETTINGS_MODULE environment variable
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/dj_static.py", line 7, in <module>
+    from django.contrib.staticfiles.handlers import StaticFilesHandler as DebugHandler
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/handlers.py", line 8, in <module>
+    from django.contrib.staticfiles.views import serve
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/views.py", line 13, in <module>
+    from django.views import static
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/views/static.py", line 96, in <module>
+    template_translatable = ugettext_noop("Index of %(directory)s")
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 65, in gettext_noop
+    return _trans.gettext_noop(message)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 52, in __getattr__
+    if settings.USE_I18N:
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 151, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Traceback (most recent call last):
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+    __import__(module)
+  File "/home/ank/projects/tweety-app/tweety/tweety/wsgi.py", line 7, in <module>
+    from dj_static import Cling # define this after setting the DJANGO_SETTINGS_MODULE environment variable
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/dj_static.py", line 7, in <module>
+    from django.contrib.staticfiles.handlers import StaticFilesHandler as DebugHandler
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/handlers.py", line 8, in <module>
+    from django.contrib.staticfiles.views import serve
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/views.py", line 13, in <module>
+    from django.views import static
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/views/static.py", line 96, in <module>
+    template_translatable = ugettext_noop("Index of %(directory)s")
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 65, in gettext_noop
+    return _trans.gettext_noop(message)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 52, in __getattr__
+    if settings.USE_I18N:
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 151, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+2017-07-08 23:03:20 [1141] [INFO] Worker exiting (pid: 1141)
+2017-07-08 23:03:20 [1136] [INFO] Shutting down: Master
+2017-07-08 23:03:20 [1136] [INFO] Reason: Worker failed to boot.
+
+2017-07-08 23:04:16 [1296] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: ('localhost', 8125)
+  post_fork: <function post_fork at 0x7fb6da2989b0>
+  pythonpath: ./tweety
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fb6da2986e0>
+  pre_fork: <function pre_fork at 0x7fb6da298848>
+  cert_reqs: 0
+  preload_app: False
+  workers: 1
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 1000
+  graceful_timeout: 30
+  spew: False
+  proc_name: None
+  umask: 0
+  on_reload: <function on_reload at 0x7fb6da298578>
+  post_worker_init: <function post_worker_init at 0x7fb6da298b18>
+  pre_exec: <function pre_exec at 0x7fb6da298f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7fb6da29d668>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fb6da29d140>
+  post_request: <function post_request at 0x7fb6da29d230>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fb6da298c80>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/ank/projects/tweety-app/tweety
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7fb6da29d398>
+  paste: None
+  default_proc_name: tweety.wsgi:application
+  errorlog: ./gunicorn_tweety.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7fb6da298de8>
+  loglevel: debug
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fb6da29d500>
+  timeout: 30
+  on_starting: <function on_starting at 0x7fb6da298410>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+2017-07-08 23:04:16 [1296] [INFO] Starting gunicorn 19.1.0
+2017-07-08 23:04:16 [1296] [DEBUG] Arbiter booted
+2017-07-08 23:04:16 [1296] [INFO] Listening at: http://127.0.0.1:8000 (1296)
+2017-07-08 23:04:16 [1296] [INFO] Using worker: sync
+2017-07-08 23:04:16 [1302] [INFO] Booting worker with pid: 1302
+2017-07-08 23:04:16 [1302] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+    __import__(module)
+  File "/home/ank/projects/tweety-app/tweety/tweety/wsgi.py", line 7, in <module>
+    from dj_static import Cling # define this after setting the DJANGO_SETTINGS_MODULE environment variable
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/dj_static.py", line 7, in <module>
+    from django.contrib.staticfiles.handlers import StaticFilesHandler as DebugHandler
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/handlers.py", line 8, in <module>
+    from django.contrib.staticfiles.views import serve
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/views.py", line 13, in <module>
+    from django.views import static
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/views/static.py", line 96, in <module>
+    template_translatable = ugettext_noop("Index of %(directory)s")
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 65, in gettext_noop
+    return _trans.gettext_noop(message)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 52, in __getattr__
+    if settings.USE_I18N:
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 132, in __init__
+    % (self.SETTINGS_MODULE, e)
+ImportError: Could not import settings 'tweety.local.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named local.settings
+Traceback (most recent call last):
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+    __import__(module)
+  File "/home/ank/projects/tweety-app/tweety/tweety/wsgi.py", line 7, in <module>
+    from dj_static import Cling # define this after setting the DJANGO_SETTINGS_MODULE environment variable
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/dj_static.py", line 7, in <module>
+    from django.contrib.staticfiles.handlers import StaticFilesHandler as DebugHandler
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/handlers.py", line 8, in <module>
+    from django.contrib.staticfiles.views import serve
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/contrib/staticfiles/views.py", line 13, in <module>
+    from django.views import static
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/views/static.py", line 96, in <module>
+    template_translatable = ugettext_noop("Index of %(directory)s")
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 65, in gettext_noop
+    return _trans.gettext_noop(message)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/utils/translation/__init__.py", line 52, in __getattr__
+    if settings.USE_I18N:
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 54, in __getattr__
+    self._setup(name)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 49, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/ank/projects/tweety-app/local/lib/python2.7/site-packages/django/conf/__init__.py", line 132, in __init__
+    % (self.SETTINGS_MODULE, e)
+ImportError: Could not import settings 'tweety.local.settings' (Is it on sys.path? Is there an import error in the settings file?): No module named local.settings
+2017-07-08 23:04:16 [1302] [INFO] Worker exiting (pid: 1302)
+2017-07-08 23:04:16 [1296] [INFO] 1 workers
+2017-07-08 23:04:16 [1296] [INFO] Shutting down: Master
+2017-07-08 23:04:16 [1296] [INFO] Reason: Worker failed to boot.
+
+2017-07-08 23:05:04 [1479] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: ('localhost', 8125)
+  post_fork: <function post_fork at 0x7f0923a379b0>
+  pythonpath: ./tweety
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f0923a376e0>
+  pre_fork: <function pre_fork at 0x7f0923a37848>
+  cert_reqs: 0
+  preload_app: False
+  workers: 1
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 1000
+  graceful_timeout: 30
+  spew: False
+  proc_name: None
+  umask: 0
+  on_reload: <function on_reload at 0x7f0923a37578>
+  post_worker_init: <function post_worker_init at 0x7f0923a37b18>
+  pre_exec: <function pre_exec at 0x7f0923a37f50>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x7f0923a3c668>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f0923a3c140>
+  post_request: <function post_request at 0x7f0923a3c230>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f0923a37c80>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/ank/projects/tweety-app/tweety
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x7f0923a3c398>
+  paste: None
+  default_proc_name: tweety.wsgi:application
+  errorlog: ./gunicorn_tweety.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x7f0923a37de8>
+  loglevel: debug
+  bind: ['127.0.0.1:8000']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f0923a3c500>
+  timeout: 30
+  on_starting: <function on_starting at 0x7f0923a37410>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+2017-07-08 23:05:04 [1479] [INFO] Starting gunicorn 19.1.0
+2017-07-08 23:05:04 [1479] [DEBUG] Arbiter booted
+2017-07-08 23:05:04 [1479] [INFO] Listening at: http://127.0.0.1:8000 (1479)
+2017-07-08 23:05:04 [1479] [INFO] Using worker: sync
+2017-07-08 23:05:04 [1484] [INFO] Booting worker with pid: 1484
+2017-07-08 23:05:04 [1479] [INFO] 1 workers
+2017-07-08 23:05:34 [1479] [INFO] 1 workers
+2017-07-08 17:35:35 [1484] [DEBUG] GET /
+2017-07-08 17:35:49 [1484] [DEBUG] Closing connection. 
+2017-07-08 17:35:49 [1484] [DEBUG] Closing connection. 
+2017-07-08 17:35:49 [1484] [DEBUG] Closing connection. 
+2017-07-08 17:35:49 [1484] [DEBUG] Closing connection. 
+2017-07-08 23:05:50 [1479] [INFO] 1 workers
+2017-07-08 23:06:19 [1479] [INFO] 1 workers
+2017-07-08 23:06:49 [1479] [INFO] 1 workers
+2017-07-08 23:07:04 [1479] [INFO] 1 workers
+2017-07-08 23:07:19 [1479] [INFO] 1 workers
+2017-07-08 23:07:49 [1479] [INFO] 1 workers
+2017-07-08 23:08:19 [1479] [INFO] 1 workers
+2017-07-08 23:08:34 [1479] [INFO] 1 workers
+2017-07-08 23:08:49 [1479] [INFO] 1 workers
+2017-07-08 23:09:04 [1479] [INFO] 1 workers
+2017-07-08 23:09:19 [1479] [INFO] 1 workers
+2017-07-08 23:09:34 [1479] [INFO] 1 workers
+2017-07-08 23:09:49 [1479] [INFO] 1 workers
+2017-07-08 23:10:04 [1479] [INFO] 1 workers
+2017-07-08 23:10:19 [1479] [INFO] 1 workers
+2017-07-08 23:10:34 [1479] [INFO] 1 workers
+2017-07-08 23:10:49 [1479] [INFO] 1 workers
+2017-07-08 23:11:04 [1479] [INFO] 1 workers
+2017-07-08 23:11:19 [1479] [INFO] 1 workers
+2017-07-08 23:11:34 [1479] [INFO] 1 workers
+2017-07-08 23:11:49 [1479] [INFO] 1 workers
+2017-07-08 23:12:04 [1479] [INFO] 1 workers
+2017-07-08 23:12:19 [1479] [INFO] 1 workers
+2017-07-08 23:12:34 [1479] [INFO] 1 workers
+2017-07-08 23:12:49 [1479] [INFO] 1 workers
+2017-07-08 23:13:04 [1479] [INFO] 1 workers
+2017-07-08 23:13:19 [1479] [INFO] 1 workers
+2017-07-08 23:13:34 [1479] [INFO] 1 workers
+2017-07-08 23:13:49 [1479] [INFO] 1 workers
+2017-07-08 23:14:04 [1479] [INFO] 1 workers
+2017-07-08 23:14:19 [1479] [INFO] 1 workers
+2017-07-08 23:14:34 [1479] [INFO] 1 workers
+2017-07-08 23:14:49 [1479] [INFO] 1 workers
+2017-07-08 23:15:04 [1479] [INFO] 1 workers
+2017-07-08 23:15:19 [1479] [INFO] 1 workers
+2017-07-08 23:15:34 [1479] [INFO] 1 workers
+2017-07-08 23:15:49 [1479] [INFO] 1 workers
+2017-07-08 23:16:04 [1479] [INFO] 1 workers
+2017-07-08 23:16:19 [1479] [INFO] 1 workers
+2017-07-08 23:16:34 [1479] [INFO] 1 workers
+2017-07-08 23:16:49 [1479] [INFO] 1 workers
+2017-07-08 23:17:04 [1479] [INFO] 1 workers
+2017-07-08 23:17:19 [1479] [INFO] 1 workers
+2017-07-08 23:17:49 [1479] [INFO] 1 workers
+2017-07-08 23:18:04 [1479] [INFO] 1 workers
+2017-07-08 23:18:19 [1479] [INFO] 1 workers
+2017-07-08 23:18:34 [1479] [INFO] 1 workers
+2017-07-08 23:18:49 [1479] [INFO] 1 workers
+2017-07-08 23:19:04 [1479] [INFO] 1 workers
+2017-07-08 23:19:19 [1479] [INFO] 1 workers
+2017-07-08 23:19:34 [1479] [INFO] 1 workers
+2017-07-08 23:19:49 [1479] [INFO] 1 workers
+2017-07-08 23:20:04 [1479] [INFO] 1 workers
+2017-07-08 23:20:19 [1479] [INFO] 1 workers
+2017-07-08 23:20:34 [1479] [INFO] 1 workers
+2017-07-08 23:20:49 [1479] [INFO] 1 workers
+2017-07-08 23:21:04 [1479] [INFO] 1 workers
+2017-07-08 23:21:19 [1479] [INFO] 1 workers
+2017-07-08 23:21:34 [1479] [INFO] 1 workers
+2017-07-08 23:21:49 [1479] [INFO] 1 workers
+2017-07-08 23:22:04 [1479] [INFO] 1 workers
+2017-07-08 23:22:19 [1479] [INFO] 1 workers
+2017-07-08 23:22:34 [1479] [INFO] 1 workers
+2017-07-08 23:22:49 [1479] [INFO] 1 workers
+2017-07-08 23:23:04 [1479] [INFO] 1 workers
+2017-07-08 23:23:19 [1479] [INFO] 1 workers
+2017-07-08 23:23:34 [1479] [INFO] 1 workers
+2017-07-08 23:23:49 [1479] [INFO] 1 workers
+2017-07-08 23:24:04 [1479] [INFO] 1 workers
+2017-07-08 23:24:19 [1479] [INFO] 1 workers
+2017-07-08 23:24:34 [1479] [INFO] 1 workers
+2017-07-08 23:24:49 [1479] [INFO] 1 workers
+2017-07-08 23:25:04 [1479] [INFO] 1 workers
+2017-07-08 23:25:19 [1479] [INFO] 1 workers
+2017-07-08 23:25:34 [1479] [INFO] 1 workers
+2017-07-08 23:25:49 [1479] [INFO] 1 workers
+2017-07-08 23:26:19 [1479] [INFO] 1 workers
+2017-07-08 23:26:34 [1479] [INFO] 1 workers
+2017-07-08 23:26:49 [1479] [INFO] 1 workers
+2017-07-08 23:27:04 [1479] [INFO] 1 workers
+2017-07-08 23:27:19 [1479] [INFO] 1 workers
+2017-07-08 23:27:34 [1479] [INFO] 1 workers
+2017-07-08 23:27:49 [1479] [INFO] 1 workers
+2017-07-08 23:28:04 [1479] [INFO] 1 workers
+2017-07-08 23:28:19 [1479] [INFO] 1 workers
+2017-07-08 23:28:35 [1479] [INFO] 1 workers
+2017-07-08 23:28:50 [1479] [INFO] 1 workers
+2017-07-08 23:29:05 [1479] [INFO] 1 workers
+2017-07-08 23:29:20 [1479] [INFO] 1 workers
+2017-07-08 23:29:35 [1479] [INFO] 1 workers
+2017-07-08 23:29:50 [1479] [INFO] 1 workers
+2017-07-08 23:30:05 [1479] [INFO] 1 workers
+2017-07-08 23:30:20 [1479] [INFO] 1 workers
+2017-07-08 23:30:35 [1479] [INFO] 1 workers
+2017-07-08 23:30:50 [1479] [INFO] 1 workers
+2017-07-08 23:31:20 [1479] [INFO] 1 workers
+2017-07-08 23:31:50 [1479] [INFO] 1 workers
+2017-07-08 23:32:20 [1479] [INFO] 1 workers
+2017-07-08 23:32:50 [1479] [INFO] 1 workers
+2017-07-08 23:33:05 [1479] [INFO] 1 workers
+2017-07-08 23:33:20 [1479] [INFO] 1 workers
+2017-07-08 23:33:35 [1479] [INFO] 1 workers
+2017-07-08 23:33:50 [1479] [INFO] 1 workers
+2017-07-08 23:34:05 [1479] [INFO] 1 workers
+2017-07-08 23:34:20 [1479] [INFO] 1 workers
+2017-07-08 23:34:35 [1479] [INFO] 1 workers
+2017-07-08 23:34:50 [1479] [INFO] 1 workers
+2017-07-08 23:35:05 [1479] [INFO] 1 workers
+2017-07-08 23:35:20 [1479] [INFO] 1 workers
+2017-07-08 23:35:35 [1479] [INFO] 1 workers
+2017-07-08 23:35:50 [1479] [INFO] 1 workers
+2017-07-08 23:36:05 [1479] [INFO] 1 workers
+2017-07-08 23:36:20 [1479] [INFO] 1 workers
+2017-07-08 23:36:35 [1479] [INFO] 1 workers
+2017-07-08 23:36:50 [1479] [INFO] 1 workers
+2017-07-08 23:37:05 [1479] [INFO] 1 workers
+2017-07-08 23:37:20 [1479] [INFO] 1 workers
+2017-07-08 23:37:35 [1479] [INFO] 1 workers
+2017-07-08 23:37:50 [1479] [INFO] 1 workers
+2017-07-08 23:38:05 [1479] [INFO] 1 workers
+2017-07-08 23:38:20 [1479] [INFO] 1 workers
+2017-07-08 23:38:35 [1479] [INFO] 1 workers
+2017-07-08 23:38:50 [1479] [INFO] 1 workers
+2017-07-08 23:39:05 [1479] [INFO] 1 workers
+2017-07-08 23:39:20 [1479] [INFO] 1 workers
+2017-07-08 23:39:35 [1479] [INFO] 1 workers
+2017-07-08 23:40:05 [1479] [INFO] 1 workers
+2017-07-08 23:40:20 [1479] [INFO] 1 workers
+2017-07-08 23:40:35 [1479] [INFO] 1 workers
+2017-07-08 23:40:50 [1479] [INFO] 1 workers
+2017-07-08 23:41:05 [1479] [INFO] 1 workers
+2017-07-08 23:41:35 [1479] [INFO] 1 workers
+2017-07-08 23:41:50 [1479] [INFO] 1 workers
+2017-07-08 23:42:05 [1479] [INFO] 1 workers
+2017-07-08 23:42:20 [1479] [INFO] 1 workers
+2017-07-08 23:42:35 [1479] [INFO] 1 workers
+2017-07-08 18:12:37 [1484] [INFO] Worker exiting (pid: 1484)
+2017-07-08 23:42:37 [1479] [INFO] 1 workers
+2017-07-08 23:42:37 [1479] [INFO] Handling signal: int
